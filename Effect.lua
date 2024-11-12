@@ -128,3 +128,21 @@ local TweenService = game:GetService("TweenService")
             end);
     end)
 end)
+
+
+
+wait(0.4)
+local soundeffect = Instance.new("Sound")
+soundeffect.SoundId = "rbxassetid://16944265635"
+soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+soundeffect:Play()
+soundeffect.Volume = 2
+
+local p = game.Players.LocalPlayer
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+local AnimAnim = Instance.new("Animation")
+AnimAnim.AnimationId = "rbxassetid://16944345619"
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+AnimAnim.AnimationId = "rbxassetid://0"
+Anim:Play()
